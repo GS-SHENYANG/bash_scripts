@@ -1,0 +1,10 @@
+#!/usr/bin/local/bash
+#by 27382901@QQ.COM
+#script to change zfs pool raidz1 raidz2
+#RAIDZ1 : 5 MG04SCA60EE
+#RAIDZ1 : 5 MG04SCA60EE 1ZLOG 
+#RAIDZ1 : 5 MG04SCA60EE 1L2ARC
+#RAIDZ1 : 5 MG04SCA60EE 1ZLOG 1L2ARC
+
+
+
