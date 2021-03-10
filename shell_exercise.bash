@@ -2,5 +2,5 @@
 
 dayOfMonth=$(date +%d)
 
-echo $dayOfMonth
+echo "$dayOfMonth"
 
