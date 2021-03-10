@@ -3,4 +3,3 @@
 dayOfMonth=$(date +%d)
 
 echo "$dayOfMonth"
-
