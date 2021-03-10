@@ -16,11 +16,14 @@ io_engine_var=psync
 io_depth_var=64
 # I/O type ,buffered=true for default
 # target file
+target_file=data.log
 
 
+#dont show not in used
+echo "$io_size" "$io_engine_var" "$io_depth_var" "$target_file"
 
 
 for rw_str in $io_type_var 
 do
-        echo "$rw_str"
+        echo "io_type is: $rw_str" 
 done
