@@ -1,4 +1,4 @@
-#!usr/local/bin/bash
+#!/usr/local/bin/bash
 
 
 echo this is a test
