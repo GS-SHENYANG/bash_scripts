@@ -31,4 +31,6 @@
     [root@truenas ~]# echo $filename.log
     2021-03-10-23-11-09.log
 
+# ps创建虚拟磁盘vhdx
+    new-vhd -dynamic d:\hyper-v-vm\temp3.vhdx -sizebytes 10gb
     
