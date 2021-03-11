@@ -1,23 +1,24 @@
-;–start job file –
+    ;–start job file –
 
-[random-writers]
+    [random-writers]
 
-ioengine=libaio
+    ioengine=libaio
 
-iodepth=4
+    iodepth=4
 
-rw=randwrite
+    rw=randwrite
 
-bs=32k
+    bs=32k
 
-direct=0
+    direct=0
 
-size=64m
+    size=64m
 
-numjobs=4
+    numjobs=4
 
-;–end job file–
+    ;–end job file–
 
-；等同于
-；$fio –name=random-writers –ioengine=libaio –iodepth=4 –rw=randwrite –bs=32k –direct=0 –size=64m –numjobs=4
+等同于
+
+    fio –name=random-writers –ioengine=libaio –iodepth=4 –rw=randwrite –bs=32k –direct=0 –size=64m –numjobs=4
 

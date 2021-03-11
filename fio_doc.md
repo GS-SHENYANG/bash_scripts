@@ -1,10 +1,10 @@
-#!usr/local/bin/bash
+    #!usr/local/bin/bash
 
-fio -filename=test -iodepth=1 -numjobs=1 -thread -rw=randwrite -bs=4k -ioengine=libaio -group_reporting -name=mytest -randrepeat=0 -time_based -runtime=300 -direct=1
+    fio -filename=test -iodepth=1 -numjobs=1 -thread -rw=randwrite -bs=4k -ioengine=libaio -group_reporting -name=mytest -randrepeat=0 -time_based -runtime=300 -direct=1
 
-fio -direct=1 -iodepth=12 -rw=rw -ioengine=rbd -bs=4K -group_reporting -name=test -numjobs=4 -runtime=600 clientname=admin -pool=pool-4f54c712d0fc4ae494d924031cb0f81f -rbdname=volume-b54cffb2fe31417695d819bb40af4c6f
+    fio -direct=1 -iodepth=12 -rw=rw -ioengine=rbd -bs=4K -group_reporting -name=test -numjobs=4 -runtime=600 clientname=admin -pool=pool-4f54c712d0fc4ae494d924031cb0f81f -rbdname=volume-b54cffb2fe31417695d819bb40af4c6f
 
-fio -thread -ioengine=libaio -group_reporting -name=mytest -randrepeat=0 -time_based -runtime=300 -direct=1 rwmixread=70 -filename=/dev/sdi:/dev/sdj -rw=randrw -bs=4k -numjob=1 --iodepth=128
+    fio -thread -ioengine=libaio -group_reporting -name=mytest -randrepeat=0 -time_based -runtime=300 -direct=1 rwmixread=70 -filename=/dev/sdi:/dev/sdj -rw=randrw -bs=4k -numjob=1 --iodepth=128
 
 参数解释：
 
