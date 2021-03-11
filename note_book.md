@@ -34,3 +34,11 @@
 # ps创建虚拟磁盘vhdx
     new-vhd -dynamic d:\hyper-v-vm\temp3.vhdx -sizebytes 10gb
     
+# 更改当前用户的默认shell
+    chsh -s /usr/local/bin/bash
+
+# vsvode shellcheck 屏蔽掉个别的错误提示
+    #shellcheck disable=SC2239
+
+# shellcheck给出的Sha-Bang建议，不明白咋回事的就硬写把
+    #!/usr/bin/env bash
